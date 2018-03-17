@@ -4,14 +4,26 @@
     "WebDriverIO": {
       "url": "https://nodejs.org/en/",
       "browser": "chrome",
-      "windowSize": "maximize"
+      "windowSize": "maximize",
+      "keepCookies": true,
+      "timeouts": {
+        "script": 120000,
+        "pageLoad": 120000
+      }
     }
   },
   "include": {
     "I": "./steps_file.js",
     "loginPage": "./pages/Login.js"
   },
-  "mocha": {},
+  "mocha": {
+    "mochaFile": "output/-e2e-test-result.xml",
+    "reportDir": "output",
+    "reportFilename": "-e2e-test-report",
+    "reportTitle": "e2e-test-report",
+    "reportPageTitle": "e2e-test-report",
+    "inlineAssets": true
+  },
   "bootstrap": false,
   "teardown": null,
   "hooks": [],
