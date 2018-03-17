@@ -3,7 +3,8 @@
   "helpers": {
     "WebDriverIO": {
       "url": "https://nodejs.org/en/",
-      "browser": "chrome"
+      "browser": "chrome",
+      "windowSize": "maximize"
     }
   },
   "include": {
