@@ -1,8 +1,9 @@
 {
   "output": "./output",
+  "tests": "./test/*_test.js",
   "helpers": {
     "WebDriverIO": {
-      "url": "https://nodejs.org/en/",
+      "url": "http://localhost:8080",
       "browser": "chrome",
       "windowSize": "maximize",
       "restart": false,
@@ -28,7 +29,6 @@
   "bootstrap": false,
   "teardown": null,
   "hooks": [],
-  "tests": "./test/*_test.js",
   "timeout": 10000,
   "name": "codeceptjs_test"
 }
