@@ -5,6 +5,7 @@
       "url": "https://nodejs.org/en/",
       "browser": "chrome",
       "windowSize": "maximize",
+      "restart": false,
       "keepCookies": true,
       "timeouts": {
         "script": 120000,

@@ -2,9 +2,12 @@ const { name, password } = require('../config');
 
 Feature('千米达人');
 
-Scenario('login account', (I, loginPage) => {
+Scenario('登录账号', (I, loginPage) => {
   loginPage.beforeLogin();
   loginPage.loginAccount(name, password);
+});
+
+Scenario('千米达人店铺', I => {
   I.click(
     '#react-content > div > div > div.qmid-page-container > div > div > div.select-store-wrapper > div > div.ant-tabs-content.ant-tabs-content-animated > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div > div.select-store-container > div:nth-child(2) > div.select-store-list > div > div:nth-child(4) > div'
   );
@@ -27,5 +30,8 @@ Scenario('login account', (I, loginPage) => {
     '//*[@id="react-content"]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/ul/li[1]/a'
   );
   I.waitForText('首页');
+});
+
+Scenario('退出账号', (I, loginPage) => {
   loginPage.logout();
 });
