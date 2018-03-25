@@ -7,8 +7,6 @@ module.exports = {
     I = require('../steps_file.js')();
   },
 
-  // setting locators
-  // setting locators
   fields: {
     userName: '#nickName0',
     pwd: '#logPsw',
@@ -20,7 +18,6 @@ module.exports = {
     I.fillField(this.fields.pwd, password);
   },
 
-  // insert your locators and methods here
   beforeLogin() {
     I.amOnPage('http://www.qianmi.com');
     I.waitForText('产品中心', 5);
