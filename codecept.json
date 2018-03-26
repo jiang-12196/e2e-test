@@ -19,12 +19,9 @@
     "loginPage": "./pages/Login.js"
   },
   "mocha": {
-    "mochaFile": "output/-e2e-test-result.xml",
-    "reportDir": "output",
-    "reportFilename": "e2e-test-report",
-    "reportTitle": "e2e-test-report",
-    "reportPageTitle": "e2e-test-report",
-    "inlineAssets": true
+    "reporterOptions": {
+      "reportDir": "output"
+    }
   },
   "bootstrap": false,
   "teardown": null,

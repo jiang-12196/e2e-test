@@ -2,7 +2,7 @@ const { name, password } = require('../config');
 const fields = {
   userName: '#nickName0',
   pwd: '#logPsw',
-  submitButton: '#loginForCompany > submitButton'
+  submitButton: '#loginForCompany > button'
 };
 
 Feature('千米网登录系统');
