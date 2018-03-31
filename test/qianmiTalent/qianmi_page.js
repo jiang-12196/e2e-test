@@ -16,5 +16,5 @@ exports.addr = {
     '//*[@id="react-content"]/div/div[2]/div[1]/div[2]/div[2]/ul/li[3]/div',
   //个人中心
   personalCenter:
-    '//*[@id="react-content"]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/ul/li[1]/a'
+    '//*[@id="react-content"]/div/div[2]/div[1]/div[2]/div[1]/div/div/div/ul/li[1]/a',
 };
