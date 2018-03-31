@@ -13,8 +13,8 @@ module.exports = {
     button: '#loginForCompany > button'
   },
 
-  fillLoginFields(email, password) {
-    I.fillField(this.fields.userName, email);
+  fillLoginFields(phone, password) {
+    I.fillField(this.fields.userName, phone);
     I.fillField(this.fields.pwd, password);
   },
 
@@ -25,8 +25,8 @@ module.exports = {
     I.waitForText('账号登录', 5);
   },
 
-  loginAccount(email, password) {
-    this.fillLoginFields(email, password);
+  loginAccount(phone, password) {
+    this.fillLoginFields(phone, password);
     I.click(this.fields.button);
     I.waitForText('我的店铺', 10);
     I.wait(2);

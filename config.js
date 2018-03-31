@@ -1,2 +1,2 @@
-exports.name = process.env.NAME;
+exports.phone = process.env.PHONE;
 exports.password = process.env.PASSWORD;
