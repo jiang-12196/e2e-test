@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint test",
     "selenium": "selenium-standalone start",
-    "debug": "codeceptjs run --debug"
+    "debug": "codeceptjs run --debug",
+    "reporter": "codeceptjs run --reporter mochawesome"
   },
   "repository": {
     "type": "git",
