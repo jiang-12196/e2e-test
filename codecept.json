@@ -1,6 +1,20 @@
 {
   "output": "./output",
   "tests": "./test/*/*_test.js",
+  "multiple": {
+    "basic": {
+      "browsers": [
+        {
+          "browser": "chrome",
+          "windowSize": "maximize"
+        },
+        {
+          "browser": "firefox",
+          "windowSize": "maximize"
+        }
+      ]
+    }
+  },
   "helpers": {
     "WebDriverIO": {
       "url": "http://localhost:8080",
