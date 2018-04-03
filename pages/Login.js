@@ -36,7 +36,7 @@ module.exports = {
     I.click(
       '#react-content > div > div > div.qmid-top-nav > div:nth-child(3) > div.header-right-wrap > ul > li:nth-child(4) > div > div.user-info'
     );
-    I.waitForText('退出', 3);
+    I.waitForText('退出', 5);
     I.click(
       '#react-content > div > div > div.qmid-top-nav > div:nth-child(3) > div.user-center-wrapper.slide-down > div > div > div > ul > li:nth-child(2) > a > div.item-content'
     );

@@ -22,7 +22,7 @@ Scenario('千米达人店铺', I => {
   I.click(addr.bossRole);
   I.waitForText('个人中心', 3);
   I.click(addr.personalCenter);
-  I.waitForText('首页');
+  I.waitForText(phone, 10);
 });
 
 Scenario('退出账号', (I, loginPage) => {
